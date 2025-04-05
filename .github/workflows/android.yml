@@ -1,4 +1,8 @@
-name: Android CI
+- name: Upload APK artifact
+  uses: actions/upload-artifact@v3.1.2
+  with:
+    name: app-debug-apk
+    path: app/build/outputs/apk/debug/app-debug.apkname: Android CI
 
 on:
   push:
